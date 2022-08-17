@@ -1,0 +1,290 @@
+nav a{
+    text-decoration: none;
+}
+
+nav {
+  float:right;
+  margin-right: 30px;
+  vertical-align: middle;
+
+}
+
+a:hover{
+ text-decoration:none;
+}
+
+.nav_logo img {
+    width:80px;
+  height: 80px;
+  float:left;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+nav ul li{
+  display: inline-block; 
+  padding:10px;
+  font-size:20px; 
+  font-family:raleway;
+}
+
+ul li:hover{
+  color:orange; 
+}
+
+.con{
+    text-align:center;
+    padding: 0;
+    width:450px;
+    margin: 0 auto;
+}
+
+
+.navigation-bar {
+    width: 100%;
+    height: 100px;
+    background-color: #faf2e8; 
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    height: 100px;  
+    margin: 0 1% 0 5%;
+  float: left;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 40px 0;
+  
+}
+
+.navigation-bar li {
+  display: inline;
+    margin: 0 1%;
+  padding: 20px;  
+}
+
+.navigation-bar li a {
+  color: #265445;
+  font-size: 20px;
+  text-decoration: none;  
+}
+
+.con div{
+    width:90px;
+    height:90px;
+    display:inline-block;
+    margin:2px;
+
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 1px 1px #DDD;
+    border-radius:2px;
+
+    color:#666;
+    vertical-align: top;
+    line-height: 230px;
+    font-size: 12px;
+}
+
+#el1{
+    background:linear-gradient(to bottom, #8dd2d9 , #58c0c7);
+}
+
+#el2{
+    background:radial-gradient(#77d19e,#46c17b);
+}
+
+#el3{
+    background:repeating-linear-gradient(-45deg, #de9dd4, #de9dd4 5px, white 5px, white 10px);
+}
+
+#el4{
+    background:repeating-radial-gradient(#b8e7bf, #b8e7bf 5px, white 5px, white 10px);
+}
+
+.cont{
+    height: inherit;
+    width: 100%;
+    margin: 0 auto;
+    margin: 10px;
+}
+
+/* Creating columns is as simple as this: */
+
+.cont p{
+    -moz-columns:3;
+    -webkit-columns:3;
+    columns:3;
+}
+
+#space{
+height: 100px;
+width: 100%;
+margin: auto;   
+}
+.space{
+
+    /* Pass a comma separated list of backgrounds: */
+    background:url('https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket_big.png') no-repeat center 10px, url('https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/space.jpg') no-repeat bottom center;
+
+    width: 250px;
+    height:100px;
+    margin: 0 auto;
+
+    border-radius:3px;
+
+    /* Animate the positions of both of the backgrounds */
+    transition:background-position 1s;
+}
+
+.space:hover{
+    /* The same goes for properties like background-position and repeat */
+    background-position:35% 20px, top right;
+}
+
+.slides{
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #666;
+    margin:15px;
+    display: flex;
+}
+
+.sh{
+    display: inline-block;
+    width:50%;
+    height: inherit;
+    background-color: #666;
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+.sb{
+    
+    width:50%;
+    height: inherit;
+    background-color: #666;
+    
+    vertical-align: middle;
+}
+
+h5{
+    font-family: Courier New;
+    font-size: 25px;
+}
+
+h4
+{
+    font-family: Courier New;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+p,ul{
+    font-family: sans-serif;
+}
+
+
+.CSS{
+    height: 330px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 25px;
+    background-color: #0ad;
+    color:white;
+    border-radius: 15px;
+
+}
+
+#css3features{
+
+    margin: 15px;
+    padding: 25px;
+    background-color: #DA0;
+    color:white;
+    border-radius: 15px;
+}
+#css3features:hover{
+    background-color: #fff;
+    border: 1px solid #DA0;
+    color: #DA0;
+}
+.CSS:hover{
+    background-color: #fff;
+    border: 1px solid #0ad;
+    color: #0ad;
+}
+
+.container{
+    width: 100px;
+    height:100px;
+    margin: 0 auto;
+    position:relative;
+    overflow:hidden;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.planet{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/planet.png) no-repeat center center;
+}
+
+.rocket{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket.png) no-repeat 50px center;
+
+    /* Chrome still requires the -webkit- prefix */
+    -webkit-animation:orbit 2s linear infinite;
+    animation:orbit 2s linear infinite;
+
+    transition:background-position 0.8s;
+}
+
+.container:hover .rocket{
+    background-position:80px center;
+}
+
+/* Define the keyframes of the animation */
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform:rotate(0deg);}
+    to {
+        -webkit-transform:rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    from {
+        transform:rotate(0deg);
+
+        /* I am including the -webkit-transform properties, because
+           Chrome might start supporting keyframe without prefix in the future,
+           but we can't be certain whether it will support prefix-free transform
+           at the same time */
+
+        -webkit-transform:rotate(0deg);}
+    to {
+        transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+    }
+}
